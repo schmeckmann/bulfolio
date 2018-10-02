@@ -1,0 +1,22 @@
+{
+  "name": "bulfolio",
+  "version": "1.0.0",
+  "description": "Bulma Portfolio Template",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schmeckmann/bulfolio.git"
+  },
+  "author": "schmeckmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/schmeckmann/bulfolio/issues"
+  },
+  "homepage": "https://github.com/schmeckmann/bulfolio#readme"
+}
