@@ -15,17 +15,16 @@ gulp.task('sass', function() {
         .pipe(browserSync.stream());
 });
 
-
 // Watch Sass & Serve
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', gulp.series('sass', () => {
     browserSync.init({
         server: "./src"  
     });
 
-    gulp.watch(['src/scss/*.scss'], ['sass']);
-    gulp.watch(['src/scss/*/*.scss'], ['sass']);
+    gulp.watch(['src/scss/*.scss'], gulp.series('sass'));
+    gulp.watch(['src/scss/*/*.scss'], gulp.series('sass'));
     gulp.watch("src/*.html").on('change', browserSync.reload);
-});
+}));
 
 // Default Task
-gulp.task('default', ['serve']);
+gulp.task('default', gulp.series('serve'));
