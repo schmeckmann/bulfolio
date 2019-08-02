@@ -8068,22 +8068,25 @@ label.panel-block {
   .card .card-footer-item {
     border-color: #424242; }
 
-#portfolio .card {
-  -webkit-box-shadow: 0px 8px 22px rgba(10, 10, 10, 0.45), 0 0 0 1px rgba(10, 10, 10, 0.25);
-  box-shadow: 0px 8px 22px rgba(10, 10, 10, 0.45), 0 0 0 1px rgba(10, 10, 10, 0.25); }
-  #portfolio .card .card-image {
+section#home .hero-body {
+  padding: 0 1.5rem; }
+
+section#portfolio .card {
+  -webkit-box-shadow: 0 5px 22px rgba(10, 10, 10, 0.45);
+  box-shadow: 0 5px 22px rgba(10, 10, 10, 0.45); }
+  section#portfolio .card .card-image {
     -webkit-transition: -webkit-transform 200ms linear;
     transition: -webkit-transform 200ms linear;
     transition: transform 200ms linear;
     transition: transform 200ms linear, -webkit-transform 200ms linear; }
-    #portfolio .card .card-image:hover {
+    section#portfolio .card .card-image:hover {
       -webkit-transform: scale(1.02);
       transform: scale(1.02); }
-  #portfolio .card .button {
+  section#portfolio .card .button {
     position: absolute;
     right: 15px;
     bottom: 15px;
-    border: #b7e43d solid 1px;
+    border: #5b7711 solid 1px;
     text-transform: uppercase;
     border-radius: 0; }
 
