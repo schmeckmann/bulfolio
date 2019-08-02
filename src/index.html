@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="has-navbar-fixed-top">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar is-transparent">
+    <nav class="navbar is-fixed-top">
         <div class="container">
 
             <div class="navbar-brand">
@@ -25,7 +25,7 @@
             </div>
 
             <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-start">
+                <div class="navbar-end">
                     <a class="navbar-item" href="#">
                         Home
                     </a>
@@ -39,36 +39,40 @@
             </div>
         </div>
     </nav>
-    <section class="hero is-large">
-        <div class="hero-body">
-            <div class="container">
-                <div class="columns">
-                    <div class="column is-8-desktop is-offset-2-desktop">
-                        <h1 class="title is-2 is-spaced has-text-centered">
-                            Introduction
-                        </h1>
-                        <h2 class="subtitle is-4">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio minima ex quis earum, unde
-                            in at dolorum, minus rerum libero quos repellat! Quidem, eaque sint mollitia sit qui unde
-                            quisquam.
-                        </h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section is-medium">
+    <div id="particles-js"></div>
+    <section class="section is-large">
         <div class="container">
             <div class="columns">
-                <div class="column is-8-desktop is-offset-2-desktop">
-                    <h1 class="title is-2 is-spaced has-text-centered">
-                        Check my awesome projects
+                <div class="column is-8-desktop is-offset-2-desktop has-text-centered">
+                    <h1 class="title is-2 is-spaced">
+                        I do <span class="typed"></span>
                     </h1>
                     <h2 class="subtitle is-4">
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio minima ex quis earum, unde
                         in at dolorum, minus rerum libero quos repellat! Quidem, eaque sint mollitia sit qui unde
                         quisquam.
                     </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero is-medium">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-8-desktop is-offset-2-desktop">
+                        <h1 class="title is-2 is-spaced has-text-centered">
+                            Check my awesome projects
+                        </h1>
+                        <h2 class="subtitle is-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio minima ex quis earum, unde
+                            in at dolorum, minus rerum libero quos repellat! Quidem, eaque sint mollitia sit qui unde
+                            quisquam.
+                        </h2>
+                        <div class="has-text-centered">
+                            <a href="#" class="button is-medium is-primary is-outlined">View more</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,5 +116,25 @@
         </div>
     </footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script>
+    $(document).ready(function () {
+        particlesJS.load('particles-js', 'js/particles.json');
+
+        var options = {
+            strings: ["web development", "application development", "cyber-security", "system engineering"],
+            typeSpeed: 40
+        }
+
+        var typed = new Typed(".typed", options);
+
+        $(document).scroll(function () {
+            var $nav = $(".navbar.is-fixed-top");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });
+</script>
 
 </html>

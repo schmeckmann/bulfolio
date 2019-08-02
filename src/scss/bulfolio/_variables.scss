@@ -4,7 +4,7 @@ $grey:         hsl(0, 0%, 48%);
 $grey-light:   hsl(0, 0%, 71%);
 $grey-lighter: hsl(0, 0%, 86%);
 
-$primary: #00ff00 !default;
+$primary: #8fba1a !default;
 $primary-light: lighten($primary, 10);
 $cyan: #4c8bb5;
 $link: #3273E2;
@@ -12,7 +12,7 @@ $link: #3273E2;
 $white: #fff;
 $white-ter:    #f5f5f5;
 
-$body-background-color: #000;
+$body-background-color: #08090d;
 $background: $grey-darker;
 $footer-background-color: $background;
 
@@ -55,7 +55,7 @@ $pagination-disabled-background-color: $grey-dark;
 $dropdown-content-background-color: $background;
 $dropdown-item-color: $text;
 
-$navbar-background-color: $body-background-color;
+$navbar-background-color: rgba(54, 54, 54, .25);
 $navbar-item-color: $white;
 $navbar-item-hover-color: $white;
 $navbar-item-hover-background-color: rgba($white, 0.12);

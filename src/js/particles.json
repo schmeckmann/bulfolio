@@ -1,0 +1,35 @@
+{
+    "particles": {
+      "number": {
+        "value": 10,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#a4d422"
+      },
+      "shape": {
+        "type": "edge"
+      },
+      "opacity": {
+        "value": 0.085,
+        "random": true
+      },
+      "size": {
+        "value": 40,
+        "random": true
+      },
+      "line_linked": {
+        "enable": false
+      },
+      "move": {
+        "enable": true,
+        "speed": 2.5,
+        "random": true,
+        "out_mode": "out"
+      }
+    },
+    "retina_detect": true
+  }
