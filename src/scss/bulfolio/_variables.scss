@@ -12,6 +12,8 @@ $link: #3273E2;
 $white: #fff;
 $white-ter:    #f5f5f5;
 
+$family-sans-serif: "Blinker", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
 $body-background-color: #08090d;
 $background: $grey-darker;
 $footer-background-color: $background;
@@ -26,6 +28,10 @@ $text: $white;
 $text-light: lighten($text, 10);
 $text-strong: darken($text, 5);
 
+$radius: 0;
+$radius-small: 2px;
+$radius: 0;
+
 $link-hover: $primary-light;
 $link-focus: $primary-light;
 $link-active: $primary-light;
@@ -38,6 +44,17 @@ $button-border-color: $grey-darker;
 $button-hover-color: $grey-lighter;
 $button-focus: $grey-light;
 $button-active-color: $grey-light;
+
+$input-color: $grey-dark;
+$input-hover-color: $text-light;
+$input-focus-color: $text-light;
+$input-background-color: $grey-lighter;
+$input-border-color: $primary;
+$input-hover-border-color: $primary-light;
+$input-focus-border-color: desaturate($primary-light, 30);
+$input-focus-box-shadow-color: rgba(desaturate($primary-light, 30), .25);
+$input-icon-color: $grey;
+$input-icon-active-color: $grey-dark;
 
 $table-color: $text;
 $table-head: $grey-lighter;

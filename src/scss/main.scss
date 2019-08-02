@@ -12,6 +12,12 @@ html {
     transition: background 200ms linear;
 }
 
+.navbar-brand .navbar-item {
+    span {
+        transition: color 150ms linear;
+    }
+}
+
 .typed {
     color: #8fba1a;
 }
@@ -25,4 +31,13 @@ html {
     bottom: 0;
     left: 0;
     z-index: -1;
+}
+
+.typed-cursor {
+    vertical-align: top;
+    width: 20px;
+    height: 48px;
+    border: $primary solid 2px;
+    display: inline-block;
+    margin-left: 8px;
 }

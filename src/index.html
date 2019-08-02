@@ -7,15 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bulfolio</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Blinker&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar is-fixed-top">
         <div class="container">
-
             <div class="navbar-brand">
-                <a class="navbar-item">
-                    <strong>Bulfolio</strong>
+                <a class="navbar-item is-size-5">
+                    <strong><span id="logo">schmeckmann</span><span id="logo-end"
+                            class="has-text-primary">.io</span></strong>
                 </a>
                 <div class="navbar-burger burger" data-target="navbarMenu">
                     <span></span>
@@ -25,7 +28,7 @@
             </div>
 
             <div id="navbarMenu" class="navbar-menu">
-                <div class="navbar-end">
+                <div class="navbar-start">
                     <a class="navbar-item" href="#">
                         Home
                     </a>
@@ -36,27 +39,48 @@
                         Contact
                     </a>
                 </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <a class="button is-info is-outlined" href="https://github.com/schmeckmann" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="icon-social-github icons"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
+
     <div id="particles-js"></div>
-    <section class="section is-large">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-8-desktop is-offset-2-desktop has-text-centered">
-                    <h1 class="title is-2 is-spaced">
-                        I do <span class="typed"></span>
-                    </h1>
-                    <h2 class="subtitle is-4">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio minima ex quis earum, unde
-                        in at dolorum, minus rerum libero quos repellat! Quidem, eaque sint mollitia sit qui unde
-                        quisquam.
-                    </h2>
+
+    <section class="hero is-fullheight is-transparent">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-8-desktop is-offset-2-desktop has-text-centered">
+                        <h1 class="title is-1 is-spaced">
+                            I do <span class="typed"></span>
+                        </h1>
+                        <h2 class="subtitle is-4">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio minima ex quis earum, unde
+                            in at dolorum, minus rerum libero quos repellat! Quidem, eaque sint mollitia sit qui unde
+                            quisquam.
+                        </h2>
+                        <a href="#" class="button is-large is-primary is-uppercase" style="margin-top:25px">
+                            <span>
+                                Contact Me Now
+                            </span>
+                            <span class="icon">
+                                <i class="icon-phone icons"></i>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="hero is-medium">
+    <section id="portfolio" class="hero is-medium">
         <div class="hero-body">
             <div class="container">
                 <div class="columns">
@@ -69,15 +93,87 @@
                             in at dolorum, minus rerum libero quos repellat! Quidem, eaque sint mollitia sit qui unde
                             quisquam.
                         </h2>
-                        <div class="has-text-centered">
-                            <a href="#" class="button is-medium is-primary is-outlined">View more</a>
+
+                        <div class="columns is-multiline">
+                            <div class="column is-one-half-desktop is-half-tablet">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-2by1">
+                                            <img src="https://unsplash.it/300/200/?random&pic=1" alt="">
+                                        </figure>
+                                        <div class="card-content is-overlay is-clipped">
+                                            <span class="tag is-primary">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </span>
+                                            <div class="is-pulled-right">
+                                                <a class="button is-small" href="#">More information</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-one-half-desktop is-half-tablet">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-2by1">
+                                            <img src="https://unsplash.it/300/200/?random&pic=2" alt="">
+                                        </figure>
+                                        <div class="card-content is-overlay is-clipped">
+                                            <span class="tag is-primary">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </span>
+                                            <div class="is-pulled-right">
+                                                <a class="button is-small" href="#">More information</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-one-half-desktop is-half-tablet">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-2by1">
+                                            <img src="https://unsplash.it/300/200/?random&pic=3" alt="">
+                                        </figure>
+                                        <div class="card-content is-overlay is-clipped">
+                                            <span class="tag is-primary">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </span>
+                                            <div class="is-pulled-right">
+                                                <a class="button is-small" href="#">More information</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column is-one-half-desktop is-half-tablet">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <figure class="image is-2by1">
+                                            <img src="https://unsplash.it/300/200/?random&pic=4" alt="">
+                                        </figure>
+                                        <div class="card-content is-overlay is-clipped">
+                                            <span class="tag is-primary">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            </span>
+                                            <div class="is-pulled-right">
+                                                <a class="button is-small" href="#">More information</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="has-text-centered" style="margin-top:45px">
+                            <a href="#" class="button is-medium is-primary is-outlined is-uppercase">View More</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="hero is-info is-medium">
+    <section class="hero is-medium is-light">
         <div class="hero-body">
             <div class="container">
                 <div class="columns">
@@ -90,6 +186,41 @@
                             in at dolorum, minus rerum libero quos repellat! Quidem, eaque sint mollitia sit qui unde
                             quisquam.
                         </h2>
+
+                        <form action="" method="post">
+                            <div class="field">
+                                <label class="label">Name</label>
+                                <div class="control has-icons-left">
+                                    <input class="input is-medium" type="text" placeholder="Name">
+                                    <span class="icon is-small is-left">
+                                        <i class="icon-user icons"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control has-icons-left">
+                                    <input class="input is-medium" type="email" placeholder="Email">
+                                    <span class="icon is-small is-left">
+                                        <i class="icon-envelope icons"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label">Message</label>
+                                <div class="control">
+                                    <textarea class="textarea is-medium" placeholder="Message" rows="10"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field is-grouped is-pulled-right">
+                                <div class="control">
+                                    <button class="button is-primary is-medium is-uppercase">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -108,7 +239,7 @@
                 <div class="level-right">
                     <div class="level-item">
                         <p class="is-size-7 has-text-grey-light">
-                            &copy; 2019 - Alexander Schmeckmann
+                            &copy; 2019 - schmeckmann.io
                         </p>
                     </div>
                 </div>
@@ -124,14 +255,21 @@
         particlesJS.load('particles-js', 'js/particles.json');
 
         var options = {
-            strings: ["web development", "application development", "cyber-security", "system engineering"],
-            typeSpeed: 40
+            strings: ['web development', 'application development', 'system engineering'],
+            typeSpeed: 60,
+            cursorChar: '',
+            loop: true,
+            backDelay: 1000
         }
+        var typed = new Typed('.typed', options);
 
-        var typed = new Typed(".typed", options);
+        $('#logo').hover(function () {
+            $(this).toggleClass('has-text-primary');
+            $('#logo-end').toggleClass('has-text-primary');
+        });
 
         $(document).scroll(function () {
-            var $nav = $(".navbar.is-fixed-top");
+            var $nav = $('.navbar.is-fixed-top');
             $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
         });
     });
